@@ -11,8 +11,6 @@ class LengthTests {
 Length length1 = new Length(1, LengthUnit.KM);
 Length length2 = new Length(500, LengthUnit.M);
 Length l3 = new Length(50000, LengthUnit.CM);
-Length l4 = new Length((float) 1.25, LengthUnit.KM);
-
 	@BeforeEach
 	void setUp() throws Exception {
 	}
@@ -40,8 +38,6 @@ Length l4 = new Length((float) 1.25, LengthUnit.KM);
 	@Test
 	void testToString() {
 		assertEquals("500M", length2.toString());
-		assertEquals("1.25KM", l4.toString());
-		System.out.println(l4.toString());
 	}
 	@Test
 	void testBetween() {
